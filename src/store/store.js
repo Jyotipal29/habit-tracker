@@ -3,7 +3,7 @@ import { devtools, persist } from "zustand/middleware";
 
 
 
-const useHabitStore = create(devtools(persist((set, get) => {
+const useHabitStore = create(devtools(persist((set) => {
     return {
         habits: [],
         isLoading: false,
