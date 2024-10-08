@@ -1,8 +1,6 @@
 import { create } from "zustand";
 import { devtools, persist } from "zustand/middleware";
 
-
-
 const useHabitStore = create(devtools(persist((set) => {
     return {
         habits: [],
